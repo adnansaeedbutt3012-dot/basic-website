@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarketFlow Sale & Purchase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">MarketFlow</a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Sale & Purchase Business</span>
+          <h1>Buy smarter. Sell faster.</h1>
+          <p>MarketFlow helps businesses connect with buyers and sellers through reliable inventory, fast quotes, and expert support.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Browse Products</a>
+            <a href="#contact" class="btn btn-secondary">Request a Quote</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1517153295689-48d4c0ab05b9?auto=format&fit=crop&w=900&q=80" alt="Sale and purchase business illustration">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container section-header">
+        <h2>Our Services</h2>
+        <p>Complete support for purchasing, sales management, logistics, and order tracking.</p>
+      </div>
+      <div class="container services-grid">
+        <article class="service-card">
+          <h3>Product Sourcing</h3>
+          <p>Find competitive products across verified suppliers and manage pricing in one place.</p>
+        </article>
+        <article class="service-card">
+          <h3>Order Management</h3>
+          <p>Track sales, shipments, and inventory to reduce delays and improve cash flow.</p>
+        </article>
+        <article class="service-card">
+          <h3>Expert Support</h3>
+          <p>Get dedicated guidance for negotiatations, documentation, and market-ready deals.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="products" class="section products-section">
+      <div class="container section-header">
+        <h2>Featured Products</h2>
+        <p>Choose the best products for sale, with flexible purchase options and volume pricing.</p>
+      </div>
+      <div class="container filter-bar">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="electronics">Electronics</button>
+        <button class="filter-btn" data-category="furniture">Furniture</button>
+        <button class="filter-btn" data-category="supplies">Supplies</button>
+      </div>
+      <div class="container products-grid" id="productGrid">
+        <article class="product-card" data-category="electronics">
+          <h3>Smart Warehouse Monitor</h3>
+          <p>Automated stock tracking to keep your supply chain moving smoothly.</p>
+          <p class="price">$799 / unit</p>
+          <button class="btn btn-primary product-action" data-action="buy">Buy Now</button>
+        </article>
+        <article class="product-card" data-category="furniture">
+          <h3>Executive Office Desk</h3>
+          <p>Premium desks with bulk purchase discounts for new office setups.</p>
+          <p class="price">$249 / unit</p>
+          <button class="btn btn-primary product-action" data-action="buy">Buy Now</button>
+        </article>
+        <article class="product-card" data-category="supplies">
+          <h3>Commercial Packaging Set</h3>
+          <p>Durable packaging supplies for shipment and storage in bulk orders.</p>
+          <p class="price">$119 / pack</p>
+          <button class="btn btn-primary product-action" data-action="buy">Buy Now</button>
+        </article>
+        <article class="product-card" data-category="electronics">
+          <h3>Retail POS Terminal</h3>
+          <p>Point-of-sale systems built for high-volume retail and wholesale operations.</p>
+          <p class="price">$629 / unit</p>
+          <button class="btn btn-primary product-action" data-action="buy">Buy Now</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section process-section">
+      <div class="container section-header">
+        <h2>How It Works</h2>
+        <p>Streamlined sale and purchase process designed for speed and transparency.</p>
+      </div>
+      <div class="container process-grid">
+        <div class="process-step">
+          <span class="step-number">1</span>
+          <h3>Request a Quote</h3>
+          <p>Share your product needs and quantities to receive pricing within 24 hours.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">2</span>
+          <h3>Confirm the Order</h3>
+          <p>Review terms, confirm availability, and approve the logistics plan.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">3</span>
+          <h3>Track Shipment</h3>
+          <p>Monitor delivery milestones and manage sales fulfillment with ease.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container section-header">
+        <h2>Contact Sales</h2>
+        <p>Ready to start buying or selling? Send us your details and we'll follow up quickly.</p>
+      </div>
+      <div class="container contact-grid">
+        <form class="contact-form" id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your order" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+        <div class="contact-info">
+          <h3>MarketFlow Office</h3>
+          <p>123 Commerce Way<br>Business City, BC 45678</p>
+          <p>Email: sales@marketflow.com<br>Phone: +1 (800) 555-0220</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 MarketFlow. All rights reserved.</p>
+      <p>Sale & Purchase Solutions for modern businesses.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
